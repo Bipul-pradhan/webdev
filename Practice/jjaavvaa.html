@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Javascript</title>
+</head>
+<body onload="randomBanner()">
+
+    <img src="images/slider1.jpg" name="banner"><br/>
+    <script src="javas.js"></script>
+
+    <button id="changeColor"> Change Color </button>
+    <button onclick="changeColor1()"> Red </button>
+
+    <p id="demo"> </p>
+    <p>This is second paragraph</p>
+    <p>This is third Paragraph</p>
+
+    <h1>Dynamic Shopping List</h1>
+    <form name="listform">
+        <input type="text" name="listname">
+        <button type="button" name="addItem" id="addItem">Add Items</button>
+    </form>
+
+    <h2>MyShopping List</h2>
+    <ul id="items"> </ul>
+
+    <script type="text/javascript">
+
+        // let doc = document;
+        // console.log(doc);
+        // console.dir(doc);
+
+
+
+        let add = document.querySelector("#addItem");
+        let items = document.querySelector("#items");
+
+        add.onclick = function() {
+            let list = document.createElement("li");
+
+            //getting the input value
+            let text = document.listform.listname.value;
+            let textlist = document.createTextNode(text);
+
+            //creating button element
+            let deleteBtn = document.createElement("button");
+
+            //adding the button text
+            deleteBtn.textContent = "Delete";
+
+            //appending the items inside ul
+            items.appendChild(list);
+            list.appendChild(textlist);
+            list.appendChild(deleteBtn);
+
+            //delete function for items
+            deleteBtn.onclick = function() {
+
+                
+                    items.removeChild(list);
+                
+    
+            }
+        }
+
+
+
+        let chgColor = document.querySelector("#changeColor")
+
+        function random(number) {
+        return Math.floor(Math.random() * (number+1));
+        }
+
+        function bgChange() {
+            const randCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
+            document.body.style.backgroundColor = randCol;
+        }
+        chgColor.addEventListener('click', bgChange);
+        chgColor.addEventListener('mouseover', bgChange);
+
+
+        //with anonymous function and without addEventListener.
+        /*chgColor.onclick = function() {
+            const randCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
+            document.body.style.backgroundColor = randCol;
+        }*/
+
+
+
+        function changeColor1() {
+            document.body.style.backgroundColor = "red";
+        }
+
+ 
+
+        document.getElementById("demo").innerHTML = "<h2> Hello </h2>";
+        // myParagraph = document.querySelectorAll("p");
+        // myParagraph.forEach(function(data){
+        //  data.style.color = "magenta";
+        // });
+        // console.log(myParagraph);
+
+
+        let para = document.getElementsByTagName("p")[2];
+        para.innerHTML = "Third Paragraph generated from DOM.";
+        console.log(para);
+
+        let para2 = document.getElementsByTagName("p")[1];
+        para2.innerHTML = "<h2>Second Paragraph generated from DOM.</h2>";
+        para2.style.color = "green";
+        para2.setAttribute("id", "para2");
+        console.log(para2);
+        
+        let num1 = 54;
+        let num2 = ["20.33", "3", "4", "67"];
+
+        //ceil, floor, random, round
+        let guessnumber = Math.ceil(Math.random()*100);
+        console.log(guessnumber);
+
+        function randomBanner() {
+            Images = ["slider1.jpg", "slider2.jpg", "slider3.jpg"];
+
+            indexnum =  Math.floor(Math.random()*(Images.length));
+  
+            document.banner.src = "images/" + Images[indexnum];
+            }
+
+    </script>
+</body>
+</html>

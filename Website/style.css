@@ -1,0 +1,650 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container, .nav-container{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 40px;
+    overflow: hidden;
+    height: auto;
+}
+
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 40px;
+    overflow: hidden;
+    height: auto;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar{
+    height: 100px;
+    background: rgba(210, 216, 216, 0.664);
+    letter-spacing: 1.2px;
+    position: relative;
+    z-index: 0;
+}
+
+.slideshow-container{
+    position: relative;
+}
+
+.navbar .flex{
+    justify-content: space-between;
+}
+
+.login{
+    margin: 0 60px;
+}
+
+.clr{
+    font-size: 30px;
+    font-family: Oswald ;
+    font: bold;
+}
+
+/* Font */ 
+
+.fnt{
+    font-size: 19px;
+    font-family: Open Sans ;
+}
+
+
+
+.login a{
+    margin: 0 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(16, 61, 133);
+}
+
+a, li{
+    text-decoration: none;
+    list-style: none;
+    color: rgb(16, 61, 133);
+}
+
+.logo p{
+    text-align: center;
+    font-size: 23px;
+    line-height: 16px;
+    cursor: pointer;
+    color: rgb(16, 61, 133);
+}
+
+.logo h1{
+    cursor: pointer;
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(16, 61, 133);
+    transition: 0.3s;
+} 
+
+.logo h1:hover{
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
+} 
+
+.links li{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+.navbar ul{
+    display: flex;
+}
+
+.navbar li{ /*because a is inside li */
+    display: flex;
+    height: 100px;
+    width: 140px;
+    align-items: center;
+    transition: 0.2s;
+    justify-content: center;
+}
+
+.navbar li:hover{
+    background: rgba(131, 133, 138, 0.192);
+}
+
+
+.svgs{
+    height: 27px;
+}
+
+/*BANNER BANNER BANNER BANNER BANNER*/
+
+.call-us{
+    height: 30px;
+    width: 240px;
+    padding: 15px;
+    background-color: rgb(43, 95, 179);
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.call .container{
+    display: flex;
+    justify-content: flex-end; 
+}
+
+.call-us p{
+    margin-left: 10px;
+}
+
+.card{
+    height: 420px;
+    width: 360px;
+    background-color: rgba(43, 95, 179, 0.89);
+    padding: 30px;
+    color: aliceblue;
+}
+
+
+
+.card h1{
+    line-height: 40px;
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: left;
+}
+
+.card p{
+    padding: 10px 0px;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: justify;
+}
+
+.line{
+    margin: 20px 0;
+    height: 4px;
+    width: 100%;
+    background-color: rgba(240, 248, 255, 0.63);
+}
+
+.price{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.price h2{
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.btn{
+    width: 65%;
+    border: 2px solid white;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 15px;
+    color: aliceblue;
+    transition: 0.5s;
+}
+
+.btn:hover{
+    border: 3px solid rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+}
+
+/*page content below banner */
+
+.houses{
+    margin: 10px 0;
+}
+
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+    margin-top: 80px;
+    font-size: 20px;
+}
+
+.heading h1{
+    font-size: 34px;
+}
+
+.house-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+    align-items: flex-start;
+    height: 740px;
+}
+
+
+.grid-image{
+    height: 300px;
+    width: 100%;
+}
+
+.mycard h2{
+    line-height: 70px;
+    color: rgb(43, 95, 179);
+}
+
+.mycard h3{
+    line-height: 30px;
+    color: rgb(43, 95, 179);
+    font-size: 22px;
+}
+
+.mycard h4{
+    line-height: 70px;
+    color: rgb(168, 136, 76);
+    font-size: 18px;
+}
+
+.mycard p{
+    line-height: 25px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+
+.mycard .btn{
+    border: 2px solid rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    padding: 10px 40px;
+    transition: 0.2s;
+}
+
+.mycard .btn:hover{
+    border: 2px solid rgb(168, 136, 76);
+    color: rgb(168, 136, 76);
+}
+
+
+
+.house{
+    margin: 10px 0;
+}
+
+.headings{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+    margin-top: 80px;
+    font-size: 20px;
+}
+
+.headings h1{
+    font-size: 34px;
+}
+
+.house-card{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-gap: 40px;
+    align-items: flex-start;
+    height: 740px;
+}
+
+
+.grid-image{
+    height: 300px;
+    width: 100%;
+}
+
+.mycards h2{
+    line-height: 70px;
+    color: rgb(43, 95, 179);
+}
+
+.mycards h3{
+    line-height: 30px;
+    color: rgb(43, 95, 179);
+    font-size: 22px;
+}
+
+.mycards h4{
+    line-height: 70px;
+    color: rgb(168, 136, 76);
+    font-size: 18px;
+}
+
+.mycards p{
+    line-height: 25px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+
+.mycards .btn{
+    border: 2px solid rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    padding: 10px 40px;
+    transition: 0.2s;
+}
+
+.mycards .btn:hover{
+    border: 2px solid rgb(168, 136, 76);
+    color: rgb(168, 136, 76);
+}
+
+/* LATEST RENTAL PROPERTIES */
+/* LATEST RENTAL PROPERTIES */
+/* LATEST RENTAL PROPERTIES */
+
+.two-colors{
+    height: 900px;
+    width: 100%;
+    background:  linear-gradient(90deg, rgb(43, 95, 179) 50%, rgba(43, 95, 179, 0.767) 50%);
+}
+
+.latest{
+    position: relative;
+}
+
+.pic-top{
+    position: absolute;
+    top: 10%;
+    margin-top: 60px;
+}
+
+.pic-bot{
+    position: absolute;
+    bottom: 0;
+}
+
+.latest img{
+    height: 400px;
+    width: 100%;
+}
+.latest .heading{
+    margin-bottom: 100px;
+}
+
+.infos{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+
+.grid{
+    display: grid;
+    grid-template-columns: 400px 400px;
+    grid-gap: 50px;
+    align-items: center;
+}
+
+.grid-content{
+    display: flex;
+    justify-content: center;
+}
+
+.infos h2{
+    line-height: 40px;
+    color: rgb(215, 227, 236);
+}
+
+.infos h3{
+    line-height: 20px;
+    color: rgb(196, 202, 207);
+    font-size: 22px;
+    margin: 15px 0;
+    height: 50px;
+}
+
+.infos h4{
+    line-height: 50px;
+    color: rgb(168, 136, 76);
+    font-size: 18px;
+}
+
+.infos p{
+    line-height: 25px;
+    text-align: justify;
+    margin-bottom: 10px;
+    color: rgb(196, 202, 207);
+}
+
+/* LATEST RENTAL PROPERTIES */
+/* LATEST RENTAL PROPERTIES */
+
+/* __________________________________________________________________ */
+
+/* LATEST RENTAL BOTTOM */
+/* LATEST RENTAL BOTTOM */
+
+
+.grid2{
+    display: grid;
+    grid-template-columns: 400px 400px;
+    grid-gap: 50px;
+    align-items: center;
+}
+
+.infos2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* LATEST RENTAL BOTTOM */
+/* LATEST RENTAL BOTTOM */
+/* LATEST RENTAL BOTTOM */
+
+.realtors{
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading2{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.icon-image{
+    width: 70px;
+    height: 70px;
+    margin-bottom: 30px;
+}
+
+.grid3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+}
+
+.free{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.free h2{
+    line-height: 40px;
+    text-align: center;
+    color: rgb(13, 61, 139);
+    height: 90px;
+}
+
+.free p{
+    font-size: 20px;
+    margin-top: 15px;
+    line-height: 25px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: rgb(0, 0, 0);
+}
+
+/* COMMENTS COMMENTS COMMENTS COMMENTS*/
+/* COMMENTS COMMENTS COMMENTS COMMENTS*/
+/* COMMENTS COMMENTS COMMENTS COMMENTS*/
+
+.background-pic{
+    height: 700px;
+    width: 100%;
+    background-image:linear-gradient(rgba(229, 255, 0, 0.096),rgba(0,0,0, 0.75)),url(images/pic69.jpg) ;
+    /* parallax scrolling */
+    background-attachment: fixed;
+    /* parallax scrolling */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: aliceblue;
+}
+
+.container-comment{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 40px;
+    overflow: hidden;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.head{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.quotes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    margin-bottom: 80px;
+}
+
+.quote{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quote h1{
+    font-size: 90px;
+    color: rgb(168, 136, 76);
+}
+
+.quote p{
+    line-height: 25px;
+    text-align: center;
+    padding-bottom: 40px;
+    font-size: 17px;
+}
+
+
+.quote h2{
+    font-size: 30px;
+    color: rgb(168, 136, 76);
+    margin-bottom: 40px;
+}
+
+
+.contact-info{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-gap: 30px;
+}
+
+iframe{
+    height: 400px;
+    width: 90%;
+}
+
+.contact-info h1{
+    font-size: 25px;
+    color: rgb(43, 95, 179);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.contact-info p{
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+
+input{
+    width: 70%;
+    height: 20px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.submit{
+    width: 74%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+form{
+    margin-left: 10px;
+}
+
+input{
+    padding: 0;
+    margin-top: 15px;
+    width: 70%;
+    height: 50px;
+}
+
+#txt{
+    height: 140px;
+    width: 74%;
+}
+
+.about{
+
+  max-width: 100%;
+  height: 200px;
+}
+  
+  .comment{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+        }
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,318 @@
+@media (max-width: 1010px) {
+
+    *{
+        overflow-x: hidden;
+    }
+
+    .container, .nav-container{
+        max-width: 800px;
+    }
+
+    .logo p{
+        display: none;
+    }
+    
+    .logo h1{
+        font-size: 19px;
+    } 
+
+    .login a{
+        font-size: 14px;
+    }
+
+    .links li{
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .navbar li{ /*because a is inside li */
+        width: 100px;
+    }
+
+    .nav-container .flex{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .card{ /*try structuring card and call the same way */
+        position: absolute;
+        bottom: 0;
+        height: 350px;
+    }
+    
+    .container44{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .call-us{
+        display: none;
+    }
+
+    /*latest properties for sale */
+    /*latest properties for sale */
+    /*latest properties for sale */
+
+    .house-cards{
+        grid-template-columns: 1fr;
+        height: 100%;
+    }
+
+    .mycard{
+        height: 650px;
+    }
+
+    .grid{
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+        margin: 50px;
+    }
+
+    .grid2{
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+        margin: 50px;
+    }
+
+    .realtors h1{
+        font-size: 30px;
+    }
+
+    .realtors h2{
+        font-size: 20px;
+        text-align: center;
+        line-height: 30px;
+    }
+
+    .realtors p{
+        font-size: 16px;
+    }
+
+    .container-comment .head h1{
+        font-size: 30px;
+    }
+
+    .quote h2{
+        font-size: 20px;
+        text-align: center;
+    }
+
+
+}
+
+@media (max-width: 750px) {
+
+    *{
+        box-sizing: border-box;
+    }
+
+    .links{
+        overflow: hidden;
+    }
+
+   .flex700{
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+   }
+
+   .navbar li{ /*because a is inside li */
+        width: 25vw;
+        justify-content: space-around;
+    }
+
+   .login{
+        margin: 0px;
+    }
+
+    .login a{
+        display: none;
+    }
+
+    .flex12{
+        gap: 60vw;
+    }
+
+    .card{
+        height: 400px;
+    }
+
+    .mycard{
+        height:  670px;
+    }
+
+    .two-colors{
+        height: 140vh;
+        margin-top: 20px;
+        background:  linear-gradient(180deg, rgb(43, 95, 179) 50%, rgba(43, 95, 179, 0.767) 50%);
+    }
+
+    .grid{
+        grid-template-columns: 1fr;
+        
+    }
+
+    .pic-top{
+        position: absolute;
+        top: 10%;
+        margin-top: 60px;
+    }
+
+    .latest .heading{
+        margin-top: 70px;
+        margin-bottom: 60px;
+    }
+
+    .realtors{
+        height: 1300px;
+    }
+
+    .heading2 h1{
+        text-align: center;
+    }
+
+    .grid3{
+        grid-template-columns: 1fr;
+    }
+
+    .background-pic{
+        height: 100vh;
+    }
+    
+    .quotes{
+        grid-template-columns: 1fr;
+    }
+
+    .container-comment{
+        height: 100vh;  
+    }
+
+    .quote p{
+        overflow-y: hidden;
+    }
+
+    .quote h2{
+        height: 50px;
+    }
+
+    .container-comment h1{
+        overflow-y: hidden;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .contact-info{
+        grid-template-columns: 1fr;
+    }
+
+    input{
+        width: 100%;
+        height: 50px;
+        padding: 10px;
+        margin-bottom: 30px;
+    }
+
+    #txt{
+        height: 140px;
+        width: 100%;
+    }
+
+    .submit{
+        justify-content: flex-start;
+    }
+
+    footer{
+        margin-top: 60px;
+    }
+
+}
+
+@media (max-width: 600px) {
+    
+    .logo h1{
+        font-size: 15px;
+        text-align: justify;
+    }
+
+    .navbar li{ /*because a is inside li */
+        width: 22vw;
+        justify-content: space-around;
+        margin-left: 5px;
+    }
+
+    .card{
+        height: 400px;
+    }
+
+    .mycard{
+        height: 900px;
+    }
+
+    .two-colors{
+        min-height: 2100px;
+    }
+
+    .container-comment .s h1{
+        font-size: 25px;
+    }
+
+    .quote .f{
+        font-size: 50px;
+    }
+
+    input{
+        width: 100%;
+        height: 50px;
+        padding: 0px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-height: 700px) {
+    .mycard{
+        height: 900px;
+    }
+
+    .two-colors{
+        min-height: 2000px;
+    }
+
+    .background-pic{
+        height: 100vh;
+    }
+    
+    .quotes{
+        grid-template-columns: 1fr;
+    } 
+}
+
+@media (max-width: 770px) {
+    .two-colors{
+        min-height: 2100px;
+    }
+}
+
+@media (max-width: 300px) {
+
+    input{
+        margin-left: 2px;
+    }
+
+    #txt{
+        height: 140px;
+        width: 74%;
+    }
+    
+}
+
+@media (max-width: 1000px) {
+    .background-pic{
+        height: 40vh;
+        width: 100%;
+    }
+
+    .container-comment{
+        display: none;
+    }
+}

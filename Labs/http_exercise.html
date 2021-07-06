@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+   
+   <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <title>http_exercise.html</title>
+
+   <meta name="author" content="your-name" />
+   <meta name="description" content="http_exercise.html" />
+</head>
+<body>
+   <h1>1.What is the Hypertext Transfer Protocol (HTTP)</h1>
+   <p> ANS: <!--HTTP is a protocol which allows the fetching of resources, such as HTML documents -->
+      Hypertext Transfer Protocol (HTTP) is an application-layer protocol for transmitting hypermedia documents, such as HTML. </p> <br> <br>
+
+
+    <h2>  2.Why is HTTP called a stateless protocol? </h2>
+<p> ANS: HTTP is called as a stateless protocol because each request is executed independently, without any knowledge of the requests that were executed before it,which suggests once the exchange closes the association between the browser and the server is also lost. </p>
+     <br><br>
+     <br>
+
+
+     <h2> 3.Describe the three phases of establishing a session using client-server protocols such as HTTP </h2>
+
+<p> ANS: the three phases of establishing a session using client-server protocols such as HTTP are:  <br> <br>
+
+  (1) Establishing a connection <br> <br>
+  (2) Sending a client request  <br> <br>
+   (3)The server processes the request, sending back its answer, providing a status code and appropriate data.</p> <br> <br>
+
+
+  <h3> (1) Establishing a connection :  </h3> <br>  
+
+ <p> In client-server protocols, it is the client which establishes the connection.Opening a connection in HTTP implies starting a connection within the underlying transport layer, as a rule this can be TCP.With TCP the default port, for an HTTP server on a computer, is port 80. Other ports can also be used, like 8000 or 8080. The URL of a page to fetch contains both the domain name, and the port number, though the latter can be omitted if it is 80. </p>
+<br> <br> <br>
+
+<h3> (2) Sending a client request : </h3> <br> <br>
+
+<p> Once the connection is established, the user-agent can send the request (a user-agent is typically a web browser, but can be anything else, a crawler, for example). A client request consists of text directives, separated by CRLF (carriage return, followed by line feed), divided into three blocks:  <br> <br>
+
+(i) The first line contains a request method followed by its parameters:
+the path of the document, i.e. an absolute URL without the protocol or domain name
+the HTTP protocol version. <br> <br>
+
+(ii) Subsequent lines represent an HTTP header, giving the server information about what type of data is appropriate (e.g., what language, what MIME types), or other data altering its behavior (e.g., not sending an answer if it is already cached). These HTTP headers form a block which ends with an empty line. <br> <br>
+
+(iii) The final block is an optional data block, which may contain further data mainly used by the POST method. </p> <br> <br>
+
+<h3> (3) The server processes the request, sending back its answer, providing a status code and appropriate dat : </h3> <br> 
+ <p> After the connected agent has sent its request, the web server processes it, and ultimately returns a response. Similar to a client request, a server response is formed of text directives, separated by CRLF, though divided into three blocks:
+
+ (i) The first line, the status line, consists of an acknowledgment of the HTTP version used, followed by a status request (and its brief meaning in human-readable text). <br> <br>
+
+ (ii) Subsequent lines represent specific HTTP headers, giving the client information about the data sent (e.g. type, data size, compression algorithm used, hints about caching). Similarly to the block of HTTP headers for a client request, these HTTP headers form a block ending with an empty line.
+
+ (iii) The final block is a data block, which contains the optional data.  </p>
+
+ 
+ <br><br>
+      
+
+     <h2> 4.Describe the parameters on a get and post request. </h2> <br> <br>
+
+
+     <p> ANS : Both GET and POST method is used to transfer data from client to server in HTTP protocol but main difference between POST and GET method is that  GET carries request parameter appended in URL string and only retrieve data whereas POST carries request parameter in message body which makes it more secure way of transferring data from client to server, often causing a change in state or side effects on the server.
+      </p>
+
+      <br> <br> 
+
+
+     <h2> 5.What are the HTTP response status code and What do the HTTP status codes, 200, and 404 indicate? </h2> <br><br>
+      
+    <p>  ANS: HTTP response status codes indicate whether a specific HTTP request has been successfully completed. Responses are grouped in five classes:
+
+Informational responses (100–199) <br> <br>
+Successful responses (200–299) <br> <br>
+Redirects (300–399) <br> <br>
+Client errors (400–499) <br> <br> 
+Server errors (500–599) </p> <br> <br> <br>
+ 
+  <h3>the HTTP status codes, 200 idicates : </h3> <br> <br>
+
+ <p> 200 OK <br> <br>
+
+The request has succeeded. The meaning of the success depends on the HTTP method:
+(i) GET: The resource has been fetched and is transmitted in the message body. <br> <br>
+(ii) HEAD: The representation headers are included in the response without any message body. <br> <br> 
+(iii) PUT or POST: The resource describing the result of the action is transmitted in the message body. <br> <br>
+(iv) TRACE: The message body contains the request message as received by the server. </p> <br> <br>
+
+ 
+  <h3>the HTTP status codes, 400 idicates : </h3> <br> <br>
+
+   <p> 400 Bad Request <br> <br>
+The server could not understand the request due to invalid syntax. </p> <br> <br> <br>
+
+
+
+     <h2> 6.What are HTTP cookies? Give an example.  </h2> <br><br>
+
+     <p> ANS: An HTTP cookie (web cookie, browser cookie) is a small piece of data that a server sends to the user's web browser </p> <br> <br>
+
+     <p> For example, a web server might send a cookie containing the username that was last used to log into a website, so that it may be filled in automatically the next time the user logs in. </p> <br> <br> <br>
+
+
+ <h2> 7.Why are cookies a security issue? </h2> <br><br>
+
+ <p> ANS: Since the data in cookies doesn't change, cookies themselves aren't harmful. They can't infect computers with viruses or other malware. However, some cyberattacks can hijack cookies and enable access to your browsing sessions. The danger lies in their ability to track individuals' browsing histories. </p> <br> <br> <br>
+
+
+   <h2> 8.Describe session hijacking and XSS </h2> <br><br>
+
+ <p> ANS : Session hijacking, also known as TCP session seizing, is a method of taking over a web user session by secretly getting the session ID and disguising as the authorized client. </p> <br> <br>
+
+ <h3> Cross-site scripting (XSS) </h3> <br> <br>
+
+  <p> Cross-site scripting (XSS) is a security exploit which allows an attacker to inject into a website malicious client-side code. This code is executed by the victims and lets the attackers bypass access controls and impersonate users. These attacks succeed if the Web app does not employ enough validation or encoding. The user's browser cannot detect the malicious script is untrustworthy, and so gives it access to any cookies, session tokens, or other sensitive site-specific information, or lets the malicious script rewrite the HTML content.</p> <br> <br>
+
+   <p> XSS attacks can be put into three categories: stored (also called persistent), reflected (also called non-persistent), or DOM-based.</p> <br> 
+    <br>
+
+    <h3> Stored XSS Attacks . </h3> <br> <br>
+
+    <p> The injected script is stored permanently on the target servers. The victim then retrieves this malicious script from the server when the browser sends a request for data. </p>
+
+    <h3> Reflected XSS Attacks. </h3> <br> <br>
+
+    <p> When a user is deceived into clicking a malicious link, submitting a specially crafted form, or browsing to a malicious site, the injected code travels to the vulnerable website. The Web server reflects the injected script back to the user's browser, such as in an error message, search result, or any other response that includes data sent to the server as part of the request. The browser executes the code because it assumes the response is from a "trusted" server which the user has already interacted with. </p> <br> <br>
+
+    <h3> DOM-based XSS Attacks </h3> <br> <br>
+
+    <p> The payload is executed as a result of modifying the DOM environment (in the victim’s browser) used by the original client-side script. That is, the page itself does not change, but the client side code contained in the page runs in an unexpected manner because of the malicious modifications to the DOM environment. </p> <br> <br> <br>
+
+   
+   <h2> 9.Describe Cross-site request forgery(CSRF) </h2> <br><br>
+
+   <p> ANS : CSRF (sometimes also called XSRF) is a related class of attack where the attacker causes the user's browser to perform a request to the website's backend without the user's consent or knowledge .<br>
+    There are many ways in which a malicious website can transmit such commands; specially-crafted image tags, hidden forms, and JavaScript XMLHttpRequests, for example, attackers can  do all work without the user's interaction or even knowledge. Unlike cross-site scripting (XSS), which exploits the trust a user has for a particular site, CSRF exploits the trust that a site has in a user's browser. <br>
+     In a CSRF attack, an innocent end user is tricked by an attacker into submitting a web request that they did not intend. This may cause actions to be performed on the website that can include inadvertent client or server data leakage, change of session state, or manipulation of an end user's account. </p>
+
+
+      <h2> 10.What are Cross-site HTTP requests (CORS) and what requests use CORS? </h2> <br> <br>
+
+      <p> ANS:  Cross-Origin Resource Sharing (CORS) is an HTTP-header based mechanism that allows a server to indicate any other origins (domain, scheme, or port) than its own from which a browser should permit loading of resources <br>
+
+      CORS moreover depends on a component by which browsers make a “preflight” ask to the server hosting the cross-origin resource, in arrange to check that the server will allow the actual request. In that preflight, the browser sends headers that demonstrate the HTTP strategy and headers that will be utilized within the actual request. </p> <br> <br> 
+      <!--A preflight request is a small request that is sent by the browser before the actual request. It contains information like which HTTP method is used, as well as if any custom HTTP headers are present. The preflight gives the server a chance to examine what the actual request will look like before it's made. --> 
+<h3> This cross-origin sharing standard (CORS) can enable cross-site HTTP requests for: </h3> <br> <br>
+<p> (i) Invocations of the XMLHttpRequest or Fetch APIs, as discussed above. <br> <br> 
+   (ii)Web Fonts (for cross-domain font usage in @font-face within CSS), so that servers can deploy TrueType fonts that can only be cross-site loaded and used by web sites that are permitted to do so. <br> <br>
+  (iii) WebGL textures. <br> <br>
+  (iv) Images/video frames drawn to a canvas using drawImage(). <br> <br>
+ (v) CSS Shapes from images. <br> 
+
+</body>
+</html>

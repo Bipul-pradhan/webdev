@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT jokes (joke+)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT joke (question, punchline)>
+<!ELEMENT question (#PCDATA)>
+<!ELEMENT punchline (#PCDATA)>

@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   
+    <!--to tell Microsoft Internet Explorer to use the latest rendering engine ( edge ) and <meta charset="UTF-8"> to tell any browser that this file is UTF-8 encoded (assuming that you use this encoding when editing or saving the file).-->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--This gives the browser instructions on how to control the page's dimensions and scaling. The width=device-width part sets the width of the page to follow the screen-width of the device (which will vary depending on the device).-->
+
+    
+    <title>HOME</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="slideshow.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    
+
+    
+
+    
+    <!--navigation-->
+    <div class="navbar">
+       <div class="container flex nav-container flex700"> <!--navcontainer-->
+            <div class="logo-login flex flex12">
+                <div class="logo">
+                
+                     <h1>PROBIP</h1>
+                    <p>REAL ESTATE</p>
+                </div>
+
+                <div class="login flex">
+                    <img src="images/user-solid.svg" class="svgs" alt="signup">
+                    <a href="signup.html">Signup</a>
+                </div>
+                
+
+                
+            </div>
+            <div class="links flex">
+               
+
+             <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Login.html">Login</a></li>
+            <li><a href="aboutus.html">About us</a></li>
+            <li><a href="gallery.html" target="_blank">Gallery</a></li>
+            <li><a href="contact.html">contact</a></li>
+            
+             </ul>
+        </div>
+    </div>
+</div>
+
+    
+
+    
+
+    <!--BAnner-->
+
+    <section>
+        
+<div class="slideshow-container">
+    <div class="call">
+        <div class="container">
+            <div class="call-us flex">
+                <img src="images/phone-alt-solid.svg" class="svgs" alt="phone">
+                <p>Call us! +977-9804828349</p>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container container44">
+        <div class="card" style="overflow: hidden;">
+            <h2>STUNNING 6 BED HOUSE IN THE HEART OF THE CITY</h2>
+            <p>It’s simple to form yourself at domestic within these luxurious Estate. Reasonable lodging, grant winning schools, broadly recognized Geisinger Restorative Center, three acclaimed colleges ,moo wrongdoing, brief commutes and picturesque properties are accessible. Villager, with five range workplaces, is the region’s most fruitful genuine bequest company and we invite you to our domestic!</p>
+                 <div class="line">
+                     <!-- line here -->
+                 </div>
+                 <div class="price">
+                    <h2>$3,000,000</h2>
+                    <a href="allsales.html" class="btn">ALL SALES</a>
+                 </div>
+        </div>
+    </div>
+
+
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="images/vita-vilcina-KtOid0FLjqU-unsplash.jpg" alt="image">
+      <div class="card-one"> 
+    </div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="images/pic2.jpg" alt="image">
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="images/pic3.jpg" alt="image">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+    
+    </section>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+    </script> 
+
+        <!-- HOUSES -->
+        <div class="houses">
+            <div class="container">
+                <div class="heading">
+                    <h1>LATEST PROPERTIES FOR SALE</h1>
+                </div>
+
+                <div class="house-cards">
+                    <div class="mycard c-1">
+                        <img src="images/card1.jpg" class="grid-image" alt="a">
+                        <h2>OLD-BANESHWOR</h2>
+                        <h3>$600,000</h3>
+                        <h4>4 bedrooms</h4>
+                        <p>It’s straightforward to make yourself at residential inside the Central DOWN AVENUE! Sensible lodging, allow winning schools, broadly recognized Geisinger Helpful Center, three acclaimed colleges ,moo wrongdoing, brief commutes and beautiful properties are open . </p>
+                         <a href="readmores.html" class="btn">READ MORE</a>
+
+                                <div class="none"></div>
+                    </div>
+                    <div class="mycard c-2">
+                        <img src="images/todd-kent-178j8tJrNlc-unsplash.jpg" class="grid-image" alt="a">
+                        <h2>POKHARA</h2>
+                        <h3>$350,000</h3>
+                        <h4>3 bedrooms</h4>
+                       <p>It’s simple to form yourself at domestic within the QUEENS WAY!. Reasonable lodging, grant winning schools, broadly recognized Geisinger Restorative Center, three acclaimed colleges ,moo wrongdoing, brief commutes and picturesque properties are accessible. Villager, </p>
+                        
+                         <a href="readmore.html" class="btn">READ MORE</a>
+                           
+
+                        
+
+                 
+
+
+                        <div class="none"></div>
+
+                    </div>
+                    <div class="mycard c-3">
+                        <img src="images/ronnie-george-9gGvNWBeOq4-unsplash.jpg" class="grid-image" alt="a">
+                        <h2>TOKHA CLOSE</h2>
+                        <h3>$800,000</h3>
+                        <h4>6 bedrooms</h4>
+                        <p>It’s comfortable enough to create yourself at household inside the RANDALL CLOSE! Sensible lodging, give winning schools, broadly recognized Geisinger Therapeutic Center, three acclaimed colleges ,moo wrongdoing, brief commutes and beautiful properties are available.</p>
+                         <a href="read.html" class="btn">READ MORE</a>
+
+                       
+
+
+                        <div class="none"></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="latest"> <!--this div is not inside anything-->
+            <div class="container">
+                <div class="heading">
+                    <h1>LATEST RENTAL PROPERTIES</h1>
+                </div>
+            </div>
+
+            <div class="two-colors"></div>
+
+            <div class="container">
+                <div class="grid-content">
+                    <div class="pic-top grid">
+                        <!-- is hanging with latest -->
+                        <div class="of-pic">
+                            <img src="images/t1.jpg" alt="">
+                        </div>
+                        <div class="infos">
+                            <h2>CHASE AVENUE</h2>
+                            <h4>4 Bedrooms</h4>
+                            <p>
+                               It’s simple to form yourself at domestic within CHASE AVENUE Reasonable lodging, grant winning schools, broadly recognized Geisinger Restorative Center, three acclaimed colleges ,moo wrongdoing, brief commutes and picturesque properties are accessible. Villager, with five range workplaces, is the region’s most fruitful genuine bequest company and looks forward to inviting you to our domestic. Villager celebrates 42 a long time of surpassing desires!</p>
+                            <h3>$500/per week</h3>
+                        </div>
+                    </div>
+
+                    <div class="pic-bot grid">
+                        <!-- is hanging with latest -->
+                        <div class="infos infos2">
+                            <h2>CHASE AVENUE</h2>
+                            <h4>4 Bedrooms</h4>
+                            <p>
+                               It’s simple to form yourself at domestic within CHASE AVENUE Reasonable lodging, grant winning schools, broadly recognized Geisinger Restorative Center, three acclaimed colleges ,moo wrongdoing, brief commutes and picturesque properties are accessible. Villager, with five range workplaces, is the region’s most fruitful genuine bequest company and looks forward to inviting you to our domestic. Villager celebrates 42 a long time of surpassing desires!</p>
+                            <h3>$500/per week</h3>
+                        </div>
+                        <div class="of-pic">
+                            <img src="images/t2.jpg" alt="clipboard">
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+
+        <div class="realtors">
+            <div class="container">
+                <div class="heading2">
+                    <h1>REALTORS YOU CAN TRUST</h1>
+                </div>
+                <div class="icons grid3">
+
+                    <div class="free">
+                        <img src="images/clipboard-regular.svg" class="icon-image" alt="clipboard">
+                        <h2>FREE REGISTRATION
+                        NO HIDDEN FEES</h2>
+                        <p class="x">You can Register Free.</p>
+                    </div>
+
+                    <div class="free">
+                        <img src="images/layer-group-solid.svg" class="icon-image" alt="stacks">
+                        <h2>PROPERTY APPRAISAL
+                        FREE CHARGE</h2>
+                        <p>The Appraisal of property is free of charge.</p>
+                    </div>
+
+                    <div class="free">
+                        <img src="images/map-marked-alt-solid.svg" class="icon-image" alt="map">
+                        <h2>LARGE 
+                        OFFICE IN LOCATIONS</h2>
+                        <p>We've several large office in locations</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="comments">
+            <div class="background-pic">
+                <div class="container-comment">
+                        <h1 class="s">WHAT OUR CLIENTS THINK</h1>
+
+        
+                    <div class="quotes">
+                       <!--<div class="quote">
+                            <h1 class="f">"</h1>
+                            <p class="g">"I'm a testimonial.Click to edit me and
+                                add text that says something nice about
+                                and your services"</p>
+                            <h2 class="h">- Tina & James Heart</h2>
+                        </div> -->
+
+                        <div class="quote">
+                            <h1 class="f">"</h1>
+                            <p class="g">"My wife and I had a dream of downsizing from our house in Kathmandu. Bipul and his skilled team helped make that dream a reality. The sale went smoothly, and we just closed on an ideal new place we're excited to call home. "</p>
+                            <h2 class="h">- Mary van den Reich</h2>
+                        </div>
+
+                        <div class="quote">
+                            <h1 class="f">"</h1>
+                            <p class="g">"I recently sold a house with ProBip and while this can be a very stressful process. I felt 110% certain by collaborating with him. He was unbiased, given incredible input, made a difference clarify clearly all subtle elements and overseen the genuine deal arrangement brilliantly."</p>
+                            <h2 class="h">- Paul & Susan Taylor</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contacts">
+            <div class="container">
+                <div class="heading">
+                    <h1>CONTACT US</h1>
+                </div>
+
+                <div class="contact-info">
+                    <div class="address">
+                        <h1>ADDRESS</h1>
+                        <p>Old Baneshwor Battisputali <br>
+                        Kathmandu, Nepal </p>
+                        <div class="map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1766.2370264969948!2d85.3358283748325!3d27.70264607140942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sold%20!5e0!3m2!1sen!2snp!4v1623399595171!5m2!1sen!2snp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+
+                        <div class="agent">
+                            <h1>TO SPEAK WITH AN AGENT, <br>
+                             PLEASE CALL OR EMAIL US:</h1>
+                            <p>Email: bipulpradhan584@gmail.com <br>
+                            <p>Tel: +977-9804828349<br>
+                            <p>Bsc Computing<br>
+                            ID:77261148<br>
+                            LEVEL-4 SEM-3
+                            </p>  
+                            
+
+                             <p>
+            &copy; PROBIP REAL ESTATE 2021. All rights reserved.
+        </p>   
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <h1>ALTERNATIVELY YOU CAN <br> FILL IN 
+                            THE FOLLOWING <br> CONTACT FORM:</h1>
+
+                        <div class="forms">
+                          
+
+                    <div id="singUpError" style="color:red;"></div>
+
+
+                  <form action="#" name="CONTACT US" method="POST">
+                    
+                        
+                        
+
+                        <input type="text" name="username" size="15" maxlength="50" placeholder="UserName" required="required" />
+                        <br/>
+
+                        
+                        <input type="text" name="email" placeholder="you@domain.com" required="required" />
+                        <br/>
+
+                        
+
+                        <input type="text" name="message" size="15" maxlength="100" placeholder="Message" required="required"/>
+                        <br/>
+
+                         <input type="submit" name="submit" value="Submit"/>
+                           <a href="#top">GOTO TOP</a>
+                    
+                
+
+
+
+                            
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+
+
+</body>
+</html>

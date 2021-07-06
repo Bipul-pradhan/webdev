@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?doctype jokes SYSTEM "jokes.dtd"?>
+<jokes>
+   <joke>
+      <question>
+         Why did the chicken cross the road?
+      </question>
+      <punchline>
+         To get to the other side!
+      </punchline>
+   </joke>
+   <joke>
+      <question>
+         What did the gold fish say to her mate swimming in a Tank?
+      </question>
+      <punchline>
+         I didn't know you could drive!
+      </punchline>
+   </joke>
+</jokes>

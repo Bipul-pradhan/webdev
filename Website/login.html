@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script src="java.js"></script>
+    
+    
+    <title>LOGIN</title>
+
+    
+</head>
+<body>
+    
+  
+         <div class="navbar">
+       <div class="container flex nav-container flex700"> <!--navcontainer-->
+            <div class="logo-login flex flex12">
+                <div class="logo">
+                   <h1>PROBIP</h1>
+                    <p>REAL ESTATE</p>
+                </div>
+               
+            </div>
+            <div class="links flex">
+              <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Login.html">Login</a></li>
+            <li><a href="aboutus.html">About us</a></li>
+            <li><a href="gallery.html" target="_blank">Gallery</a></li>
+            <li><a href="contact.html">contact</a></li>
+            
+             </ul>
+        </div>
+    </div>
+</div>
+   
+
+
+    <div id="loginError" style="color:#ff0000; "></div>
+
+    <form name="login" action="#" method="post"  onsubmit="return validateLogin()">
+        <fieldset><legend>Login</legend>
+          <input type="text" name="user" placeholder="Username" />
+          <input type="password" name="pass" placeholder="Password" />
+          <input type="submit" name="submit" value="Login"/>
+        </fieldset>
+    </form>
+
+   
+    <img src="images/pic.jpg" alt="pic" title="pic" id="pic" onmouseover="pics()" onmouseout="pic()" /> 
+     <img src="images/kitchens.jpg" alt="Kitchen" title="kitchens" id="kitchens" onmouseover="home()" onmouseout="kitchens()" />
+
+
+
+     <p>
+            &copy; PROBIP REAL ESTATE 2021. All rights reserved.
+        </p>
+
+
+   
+
+    
+   
+    
+</body>
+</html>

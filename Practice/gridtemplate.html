@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>CSS Grid starting point</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            width: 90%;
+            max-width: 900px;
+            margin: 2em auto;
+            font: .9em/1.2 Arial, Helvetica, sans-serif;
+        }
+
+        .container > div {
+            border-radius: 5px;
+            padding: 10px;
+            background-color: rgb(207,232,220);
+            border: 2px solid rgb(79,185,227);
+        }
+
+        .container {
+            display: grid;
+            /*grid-template-columns: 1fr 3fr 1fr; *//*repeat( auto-fill, minmax(200px, auto) );  /*fr = fraction of the area*/
+            grid grid-template-columns: repeat(auto-fill,minmax(8.33%,1fr));
+            grid-template-rows: minmax(100px, auto);
+            grid-gap: 6px;
+            grid-template-areas: 
+                    "banner banner banner"
+                    "sidebar content content"
+                    "footer footer footer"
+        }
+
+        .banner {
+            grid-area: banner;
+        }
+
+        .menu {
+            grid-area: sidebar; 
+        }
+
+        .content {
+            grid-area: content;
+        }
+
+        .footer {
+            grid-area: footer;  
+        }
+
+         /*If screen is 900px or less than 900px*/
+        @media screen and (max-width: 768px) {
+            body {
+                background-color: green;
+            }
+
+            .container {
+                grid-template-columns: 3fr 9fr;
+                grid-template-areas: 
+                    "banner banner"
+                    "sidebar content"
+                    "footer footer"
+            }
+        }
+
+        @media screen and (max-width: 420px) {
+            body {
+                background-color: blue;
+            }
+            .container {
+                grid-template-columns: 1fr;
+                grid-template-areas: 
+                    "banner"
+                    "sidebar"
+                    "content"
+                    "footer"
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Simple grid example</h1>
+
+    <div class="container">
+        <div class="banner">Banner</div>
+        <div class="menu">Menu</div>
+        <div class="content">content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content </div>
+        <div class="footer">Footer</div>
+    </div>
+
+</body>
+
+</html>

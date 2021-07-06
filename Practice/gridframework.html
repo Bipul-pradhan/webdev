@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>CSS Grid Framework</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: white;
+            width: 90%;
+            max-width: 900px;
+            margin: 2em auto;
+            font: .9em/1.2 Arial, Helvetica, sans-serif;
+        }
+
+        .container > div {
+            border-radius: 5px;
+            padding: 10px;
+            background-color: rgb(207,232,220);
+            border: 2px solid rgb(79,185,227);
+        }
+
+        .container {
+        	display: grid;
+        	grid-template-columns: repeat( auto-fill, minmax(8.33%, auto) ); 
+        	grid-template-rows: minmax(100px, auto);
+        	grid-gap: 6px;*
+        }
+
+        .banner {
+        	grid-row: 1 / 2;
+        	grid-column: 1 / 13;	
+        }
+
+        .menu {
+        	grid-row: 2 / 3;
+        	grid-column: 1 / 3;	
+        }
+
+        .content {
+        	grid-row: 2 / 3;
+        	grid-column: 3 / 10;	
+        }
+
+        .rightsidebar {
+            grid-row: 2 /3;
+            grid-column: 10 / 13;
+        }
+
+        .footer {
+        	grid-row: 3 / 4;
+        	grid-column: 1 / 13;	
+        }
+
+        /*If screen is 900px or less than 900px*/
+        @media screen and (max-width: 768px) {
+            body {
+                background-color: green;
+            }
+
+            .menu {
+                grid-row: 2 / 3;
+                grid-column: 1 / 5; 
+            }
+
+            .content {
+                grid-row: 3 / 4;
+                grid-column: 1 / 13;    
+            }
+
+            .rightsidebar {
+                grid-row: 2 /3;
+                grid-column: 5 / 13;
+            }
+
+            .footer {
+                grid-row: 4 / 5;
+                grid-column: 1 / 13;    
+            }
+        }
+
+          /*If screen is 600px or less than 600px*/
+        @media screen and (max-width: 420px) {
+            body {
+                background-color: blue;
+            }
+
+            .menu {
+                grid-row: 2 / 3;
+                grid-column: 1 / 13; 
+            }
+
+            .content {
+                grid-row: 3 / 4;
+                grid-column: 1 / 13;    
+            }
+
+            .rightsidebar {
+                grid-row: 4 / 5;
+                grid-column: 1 / 13;
+            }
+
+            .footer {
+                grid-row: 5 / 6;
+                grid-column: 1 / 13;    
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Simple grid example</h1>
+
+    <div class="container">
+        <div class="banner">Banner</div>
+        <div class="menu">Menu</div>
+        <div class="content">content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content </div>
+        <div class="rightsidebar">Right Side Bar</div>
+        <div class="footer">Footer</div>
+    </div>
+
+</body>
+
+</html>
